@@ -2,7 +2,7 @@
 
 ### SOBRE A APLICAÇÃO
 
-Nessa aplicação você deverá criar uma calculadora, onde a mesma deve fazer as operações básicas.
+Nessa aplicação você deverá criar uma calculadora que fará as operações básicas de matemática.
 
 - Criar um visor que mostre os números digitados;
 - Criar botões númericos (0 a 9) e a vírgula para números decimais;
