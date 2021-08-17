@@ -6,7 +6,7 @@ Nessa aplicação você deverá criar uma calculadora que fará as operações b
 
 - Criar um visor que mostre os números digitados;
 - Criar botões númericos (0 a 9) e a vírgula para números decimais;
-- Criar operações báicas, ou seja, botoẽs para multiplicar, dividir, adição e subtração;
+- Criar operações básicas, ou seja, botoẽs para multiplicar, dividir, adição e subtração;
 - Criar um botão para dar o resultado final (=);
 - Um botão para limpar o visor (AC).
 
@@ -14,7 +14,7 @@ Nessa aplicação você deverá criar uma calculadora que fará as operações b
 
 ### REGRAS DE NEGÓCIO
 
-- A estrutura de pasts é livre, porém deve estar coerente;
+- A estrutura de pastas é livre, porém deve estar coerente;
 - Deixar a aplicação com a aparência de uma calculadora;
 - Estilizar utilizando styled componentes ou css.
 
