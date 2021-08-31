@@ -1,8 +1,13 @@
 import { useState } from "react";
 import { Button2, ModalCloseButton } from "../../Styles/Buttons.style";
 import { StyledModal } from "./modal.styles";
+import { sugestions } from "../../lib/operations/Random/sugestions";
+import { useCalc } from "../../Provider/Calc";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 export const Modal = () => {
+  const { value } = useCalc();
+
   const [isOpen, setIsOpen] = useState(false);
   const [opacity, setOpacity] = useState(0);
 
@@ -26,7 +31,9 @@ export const Modal = () => {
 
   return (
     <>
-      <Button2 onClick={toggleModal}>?</Button2>
+      <Button2 open={sugestions[value] ? true : false} onClick={toggleModal}>
+        ?
+      </Button2>
       <StyledModal
         isOpen={isOpen}
         afterOpen={afterOpen}
@@ -36,8 +43,21 @@ export const Modal = () => {
         opacity={opacity}
         backgroundProps={{ opacity }}
       >
-        <p>I am a modal!</p>
-        <ModalCloseButton onClick={toggleModal}>fechar</ModalCloseButton>
+        {sugestions[value] ? (
+          <article>
+            <h3>Curiosidade Sobre os números</h3>
+            <span>{value}</span>
+            <p className="title">{sugestions[value].title}</p>
+            <p className="conteudo">{sugestions[value].conteudo}</p>
+          </article>
+        ) : (
+          <article>
+            <p className="nothing">Desse número não temos nada</p>
+          </article>
+        )}
+        <ModalCloseButton onClick={toggleModal}>
+          <AiFillCloseCircle />
+        </ModalCloseButton>
       </StyledModal>
     </>
   );

@@ -18,7 +18,7 @@ export const Calculator = () => {
       <Title>Super Calculator</Title>
       {show2 ? (
         <CalcFrame>
-          <AdvButton onClick={() => setShow2(false)}>Advanced Calc</AdvButton>
+          <AdvButton onClick={() => setShow2(false)}>ADV Calc</AdvButton>
           <ContainerVisor>
             <Visor value={value} onChange={(e) => setValue(e.target.value)} />
             {show ? (

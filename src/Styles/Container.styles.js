@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
   min-height: 100vh;
   background-color: papayawhip;
   position: static;
@@ -16,7 +15,6 @@ export const Container = styled.div`
 `;
 
 export const CalcFrame = styled.div`
-  width: 400px;
   height: 450px;
   border: 1px solid black;
   padding: 12px;
